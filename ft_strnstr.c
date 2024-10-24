@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 20:29:28 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/24 20:29:28 by marvin           ###   ########.fr       */
+/*   Created: 2024/10/24 20:28:29 by marvin            #+#    #+#             */
+/*   Updated: 2024/10/24 20:28:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-char *ft_strchr(const char *str, int search_str)
+char *ft_strnstr(const char *str, const char *search, size_t n)
 {
-    if (search_str == '\0')
+    const char *s;
+    const char *f;
+    size_t l;
+
+    if (search == '\0')
         return (char *)str;
-    
-    while (*str)
+    while (*str && n--)
     {
-        if (*str == (char)search_str)
+        s = str;
+        f = search;
+        l = n + 1;
+        while (*f && l-- && *s == *f)
+        {
+            s++;
+            f++;
+        }
+        if (*f == '\0')
             return (char *)str;
         str++;
     }
