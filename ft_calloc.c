@@ -15,7 +15,26 @@
 #include <string.h>
 #include <stdlib.h>
 
+int ft_strlen(char *str)
+{
+    int i;
+
+    i = 0;
+    while (str[i])
+        i++;
+    return (i);
+}
+
 void *calloc(size_t nitems, size_t size)
 {
-    
+    char *new;
+
+    new = (int *)malloc(ft_strlen(nitems));
+    while (size-- && *new)
+    {
+        nitems = 0;
+        new = nitems;
+        new++;
+    }
+    return (nitems);
 }
