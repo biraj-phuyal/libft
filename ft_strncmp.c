@@ -35,8 +35,8 @@ int ft_strncmp(const char *dest, const char *src, size_t n)
 
 int main()
 {
-    const char *str = "LOLOLOL";
+    char *str = "LOLOLOL";
     const char *dest = "LOK";
     int s = ft_strncmp(dest, str, 3);
-    printf("Last occurrence of %c in %s at %d" , c, str, s - str);
+    //printf("Last occurrence of %c in %s at %d" , dest, str, s - str);
 }
