@@ -28,13 +28,22 @@ int ft_strlen(char *str)
 void *calloc(size_t nitems, size_t size)
 {
     char *new;
+    char *s;
 
     new = (int *)malloc(ft_strlen(nitems));
-    while (size-- && *new)
+    s = new;
+    while (size-- && *s)
     {
         nitems = 0;
-        new = nitems;
-        new++;
+        s = nitems;
+        s++;
     }
-    return (nitems);
+    return (int)(new);
+}
+
+int main()
+{
+    size_t i = 7;
+    size_t size = 3;
+    printf(" %d %i ", calloc(i, size));
 }
