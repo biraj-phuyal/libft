@@ -27,23 +27,26 @@ int ft_strlen(char *str)
 
 void *calloc(size_t nitems, size_t size)
 {
-    char *new;
-    char *s;
+    int *new;
+    int *s;
 
-    new = (int *)malloc(ft_strlen(nitems));
+    new = (int *)malloc(sizeof(nitems));
     s = new;
-    while (size-- && *s)
+    if (*s)
     {
-        nitems = 0;
-        s = nitems;
-        s++;
+        while (size--)
+        {
+            s = 0;
+            s++;
+        }
+        return (void *)new;
     }
-    return (int)(new);
+    return NULL;    
 }
 
 int main()
 {
     size_t i = 7;
     size_t size = 3;
-    printf(" %d %i ", calloc(i, size));
+    printf("%d", calloc(i, size));
 }
