@@ -46,7 +46,7 @@ void *calloc(size_t nitems, size_t size)
 
 int main()
 {
-    size_t i = 7;
+    size_t i = 8;
     size_t size = 3;
     printf("%d", calloc(i, size));
 }
