@@ -39,7 +39,7 @@ void *calloc(size_t nitems, size_t size)
             s = 0;
             s++;
         }
-        return (void *)s;
+        return (void *)new;
     }
     return NULL;    
 }
