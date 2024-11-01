@@ -22,7 +22,7 @@ void *calloc(size_t nitems, size_t size)
 
     new = (int *)malloc(sizeof(nitems));
     s = new;
-    if (*s)
+    if (nitems != '\0')
     {
         while (size--)
         {
@@ -31,12 +31,13 @@ void *calloc(size_t nitems, size_t size)
         }
         return (void *)new;
     }
+    free (new);
     return NULL;    
 }
 
 int main()
 {
-    size_t i = 8;
+    size_t i = 1;
     size_t size = 5;
     printf("%d", calloc(i, size));
 }
