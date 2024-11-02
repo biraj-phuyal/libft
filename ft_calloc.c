@@ -26,7 +26,7 @@ void *calloc(size_t nitems, size_t size)
     {
         while (size--)
         {
-            s = 0;
+            s = 1;
             s++;
         }
         return (void *)new;
