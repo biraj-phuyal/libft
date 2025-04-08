@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 20:28:41 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/24 20:28:41 by marvin           ###   ########.fr       */
+/*   Created: 2025/04/05 10:31:39 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/04/05 10:31:40 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdio.h>
@@ -18,7 +19,7 @@
 void    *ft_memchr(const void *str, int c, size_t n)
 {
     size_t i;
-    const unsigned char *s;
+    unsigned char *s;
 
     i = 0;
     s = str;

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 17:01:32 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/16 17:01:32 by marvin           ###   ########.fr       */
+/*   Created: 2025/03/03 18:36:56 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/03/03 18:36:57 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 
@@ -18,9 +19,10 @@ int ft_isalpha(int c)
         return (1);
     return (0);
 }
-
+/* 
 int main()
 {
     char c = 9;
     printf("%d", ft_isalpha(c));
-}
+} 
+*/

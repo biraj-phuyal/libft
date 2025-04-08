@@ -1,43 +1,61 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 20:35:45 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/24 20:35:45 by marvin           ###   ########.fr       */
+/*   Created: 2025/03/03 18:36:45 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/04/05 11:22:44 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdint.h>
+#include <limits.h>
 
-void *calloc(size_t nitems, size_t size)
+
+void *ft_calloc(size_t nitems, size_t size)
 {
-    int *new;
-    int *s;
+    size_t total_size;
+    void *ptr;
+    unsigned char *byte_ptr;
+    size_t i;
 
-    new = (int *)malloc(sizeof(nitems));
-    s = new;
-    if (nitems != '\0')
+    if (nitems != 0 && size > SIZE_MAX / nitems)
+        return NULL;
+    total_size = nitems * size;
+    ptr = malloc(total_size);
+    if (!ptr)
+        return NULL;
+    byte_ptr = (unsigned char *)ptr;
+    i = 0;
+    while (i < total_size)
     {
-        while (size--)
-        {
-            s = 0;
-            s++;
-        }
-        return (void *)new;
+        byte_ptr[i] = 0;
+        i++;
     }
-    free (new);
-    return NULL;
+    return ptr;
 }
 
+/* 
 int main()
 {
     size_t i = 1;
     size_t size = 5;
-    printf("%d", calloc(i, size));
+    int *ptr = (int *)ft_calloc(i, size);
+
+    if (ptr != NULL) {
+        printf("Memory allocated successfully. Address: %p\n", (void *)ptr);
+        free(ptr);
+    } else {
+        printf("Memory allocation failed.\n");
+    }
+
+    return 0;
 }
+ */

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 20:28:39 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/24 20:28:39 by marvin           ###   ########.fr       */
+/*   Created: 2025/04/05 10:31:33 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/04/05 10:31:34 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdio.h>
@@ -31,7 +32,7 @@ int ft_memcmp(const void *str1, const void *str2, size_t n)
     }
     return (0);
 }
-
+/* 
 int main()
 {
     const char *str = "Heklo";
@@ -39,3 +40,4 @@ int main()
     const int i = ft_memcmp(str, str2, 7);
     printf("%d", i);
 }
+ */
