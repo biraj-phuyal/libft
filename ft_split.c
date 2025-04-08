@@ -22,17 +22,38 @@ int get_words(char const *s, char c)
     return (words_found);
 }
 
-char *next_word(char const *s, char c)
+char *words(char const *s, char c)
 {
-    int i;
+    int *i;
     int j;
-    int next_word;
+    char next_word;
 
-    i = 0;
     
+    i = 0;
+    j = 0;
+    while (s[*i] != c && s[j])
+        j++;
+    next_word = malloc(sizeof(char) * (j + 1));
+    i = 0;
+    while (s[*i])
+    {
+        while (s[j] != c)
+        {
+            next_word[i] = s[j];
+            j++;
+        }
+        i++;
+    }
+    next_word[i] = '\0';
+    return (next_word);
 }
 
 char **ft_split(char const *s, char c)
 {
+    int i;
+    char **split;
 
+    i = 0;
+
+    
 }

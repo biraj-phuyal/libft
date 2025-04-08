@@ -3,15 +3,47 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+         #
+#    By: biphuyal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/03 18:38:41 by biphuyal          #+#    #+#              #
-#    Updated: 2025/03/03 18:38:42 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/04/08 15:56:26 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
 NAME = libft.a
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
+	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
+	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
+	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c \
+	ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
+	ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
+	ft_putendl_fd.c ft_putnbr_fd.c ft_abs_bonus.c ft_isspace_bonus.c \
+	ft_numlen_bonus.c ft_atol_bonus.c ft_itoa_base_bonus.c
+BONUS = \
+	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
+	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
-gcc -o main main.c
+INCDIR = libft.h
+AR = ar rcs
 
-rm -f clean
+OBJS = ${SRCS:.c=.o}
+BONUS = ${BONUS:.c=.o}
+all: ${NAME}
+
+${NAME}: ${OBJS}
+	${AR} ${NAME} ${OBJS}
+
+.c.o:
+	${CC} ${CFLAGS} -I ${INCDIR} -c $< -o $@
+
+clean:
+	rm -f ${OBJS}
+
+fclean:	clean
+	rm -f ${NAME}
+
+re:	fclean all
+
+.PHONY:	all clean fclean re
