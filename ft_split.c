@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 09:39:19 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/09 09:48:09 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/09 12:58:42 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,26 +88,26 @@ char	**free_all(char **result, int idx)
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int		word_idx;
+	int		word;
 	int		word_count;
 	char	**result;
 
 	if (!s)
 		return (NULL);
 	i = 0;
-	word_idx = 0;
+	word = 0;
 	word_count = count_words(s, c);
 	result = (char **)malloc((word_count + 1) * sizeof(char *));
 	if (!result)
 		return (NULL);
-	while (word_idx < word_count)
+	while (word < word_count)
 	{
 		while (s[i] == c)
 			i++;
-		result[word_idx] = extract_word(s, c, &i);
-		if (!result[word_idx])
-			return (free_all(result, word_idx));
-		word_idx++;
+		result[word] = extract_word(s, c, &i);
+		if (!result[word])
+			return (free_all(result, word));
+		word++;
 	}
 	result[word_count] = NULL;
 	return (result);
