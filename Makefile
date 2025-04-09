@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: biphuyal <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/03 18:38:41 by biphuyal          #+#    #+#              #
-#    Updated: 2025/04/08 15:56:26 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/04/09 09:46:58 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,17 +32,17 @@ OBJS = ${SRCS:.c=.o}
 BONUS = ${BONUS:.c=.o}
 all: ${NAME}
 
-${NAME}: ${OBJS}
-	${AR} ${NAME} ${OBJS}
+${NAME}: ${OBJS} ${BONUS}
+	${AR} ${NAME} ${OBJS} ${BONUS}
 
 .c.o:
 	${CC} ${CFLAGS} -I ${INCDIR} -c $< -o $@
 
 clean:
-	rm -f ${OBJS}
+	rm -f ${OBJS} ${BONUS}
 
 fclean:	clean
-	rm -f ${NAME}
+	rm -f ${NAME} ${BONUS}
 
 re:	fclean all
 
