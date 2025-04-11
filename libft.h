@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:34:09 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 13:46:43 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:13:53 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,13 @@ char *ft_strtrim(const char *s1, const char *set);
 char *ft_substr(char const *str, unsigned int start, size_t len);
 int ft_tolower(int ch);
 int ft_touuper(int ch);
+
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+}   t_list;
+
+t_list *ft_lstnew(void *content);
 
 #endif
