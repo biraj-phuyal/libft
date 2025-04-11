@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:56 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/03/03 18:36:57 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 16:02:30 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 
 int ft_isalpha(int c)
 {
-    if ((c >='a' && c <= 'z') || (c >='A' && c <= 'Z'))
-        return (1);
-    return (0);
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
 }
 /* 
 int main()

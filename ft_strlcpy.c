@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:50 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 10:32:51 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 16:02:33 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ unsigned int ft_strlcpy(char *dest, const char *src, unsigned int n)
     dest[i] = '\0';
     return (s_len);
 }
-
+/* 
 int main() {
     // Test variables
     char dest[20] = "Hello, ";  // Destination string with enough space
@@ -47,3 +47,4 @@ int main() {
     printf("Length of the resulting string: %u\n", result);
     
 }
+ */
