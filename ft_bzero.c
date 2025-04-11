@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:36 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/03/03 18:36:37 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:21:20 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 void ft_bzero(void *s, size_t n)
 {
     size_t i;
-    unsigned char   *a;
+    int   *a;
 
     i = 0;
-    *a = s;
+    a = s;
     while (n > i)
     {
         a[i] = 0;

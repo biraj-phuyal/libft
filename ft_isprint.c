@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:37:21 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/03/03 18:37:22 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 15:02:08 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,10 @@ int ft_isprint(char c)
         return (1);
     return (0);
 }
-
+/* 
 int main()
 {
     char c = '8';
     printf("%d", ft_isprint(c));
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:24 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 10:33:25 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:31:20 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char *ft_strnstr(const char *str, const char *search, size_t n)
     const char *f;
     size_t l;
 
-    if (search == '\0')
+    if (!search)
         return (char *)str;
     while (*str && n--)
     {

@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 13:27:16 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 13:34:10 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:48:36 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void ft_putnbr_fd(int n, int fd)
 		n *= -1;
 	}
 	if (n >= 10)
-		ft_putnbr(n / 10);
+		ft_putnbr_fd(n / 10, fd);
 	digits = '0' + (n % 10);
 	write (fd, &digits, 1);
 }

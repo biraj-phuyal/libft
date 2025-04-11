@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:52 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/08 09:48:01 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 15:02:43 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,30 +16,14 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-int ft_strlen(char const *str)
+char	*ft_strdup(const char *src);
+
+int get_length(char const *str)
 {
     int i = 0;
     while (str[i])
         i++;
     return i;
-}
-
-char	*ft_strdup(const char *src)
-{
-	char	*new;
-	int		i;
-
-	i = 0;
-	new = malloc((ft_strlen(src) + 1) * sizeof(char));
-	if (new == NULL)
-		return (NULL);
-	while (src[i] != '\0')
-	{
-		new[i] = src[i];
-		i++;
-	}
-	new[i] = '\0';
-	return (new);
 }
 
 char *ft_substr(char const *str, unsigned int start, size_t len)
@@ -50,7 +34,7 @@ char *ft_substr(char const *str, unsigned int start, size_t len)
 
     if (!str)
         return NULL;
-    str_len = ft_strlen(str);
+    str_len = get_length(str);
     if (start >= str_len)
         return ft_strdup("");
     if (len > str_len - start)

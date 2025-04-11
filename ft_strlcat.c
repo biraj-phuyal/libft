@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:43 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 10:32:44 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:24:43 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ unsigned int ft_strlcat(char *dest, const char *src, unsigned int n)
         s_len++;
     while (dest[d_len])
         d_len++;
-    if (dest[d_len] >= n)
+    if (d_len >= n)
         return (n + s_len);
     while (d_len + i + 1 < n && src[i])
     {

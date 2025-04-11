@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:30 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/03/03 18:36:31 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:31:51 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int ft_atoi(const char *str)
     while(*str == '-' || *str == '+')
     {
         if(*str == '-')
-            sign = -1;
+            sign *= -1;
         str++;
         sign_count++;
         if(sign_count > 1)

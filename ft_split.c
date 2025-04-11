@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 09:39:19 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/09 12:58:42 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:59:54 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-unsigned int ft_strlcpy(char *dest, const char *src, unsigned int n)
-{
-    unsigned int s_len;
-    unsigned int i;
-
-    s_len = 0;
-    i = 0;
-    while (src[s_len])
-        s_len++;
-    if (n == 0)
-        return (s_len);
-    while (i < n - 1 && src[i])
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = '\0';
-    return (s_len);
-}
+unsigned int ft_strlcpy(char *dest, const char *src, unsigned int n);
 
 int	count_words(char const *s, char c)
 {

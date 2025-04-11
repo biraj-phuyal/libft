@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:34:03 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 10:34:04 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 15:02:04 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,10 @@ int ft_touuper(int ch)
         return (c);
     return (c);
 }
-
+/* 
 int main ()
 {
     int c = '9';
     printf("%c", ft_touuper(c));
 }
+ */

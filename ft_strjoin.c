@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:10 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 11:29:35 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 15:00:01 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include <limits.h>
 #include <stdlib.h>
 
-int ft_strlen(char const *str)
+int len(char const *str)
 {
     int i = 0;
     while (str[i])
@@ -35,7 +35,7 @@ char *ft_strjoin(char const *s1, char const *s2)
 
     if (!s1 || !s2)
         return NULL;
-    total_length = ft_strlen(s1) + ft_strlen(s2);
+    total_length = len(s1) + len(s2);
     string = (char *)malloc(total_length + 1);
     if (!string)
         return NULL;
