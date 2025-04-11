@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:34:09 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 14:13:53 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 15:56:37 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*));
 char *ft_strjoin(char const *s1, char const *s2);
 unsigned int ft_strlcat(char *dest, const char *src, unsigned int n);
 unsigned int ft_strlcpy(char *dest, const char *src, unsigned int n);
-int ft_strlen(char *str);
+int ft_strlen(const char *str);
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int ft_strncmp(const char *dest, const char *src, size_t n);
 char *ft_strnstr(const char *str, const char *search, size_t n);
