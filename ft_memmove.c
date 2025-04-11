@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 19:13:26 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 19:31:18 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void *ft_memmove(void *dest_str, const void *src_str, size_t n)
     size_t i;
 
     if (!dest_str && !src_str)
-    return ;
+    return (NULL);
     s = (const char *) src_str;
     d = (char *) dest_str;
     i = 0;
