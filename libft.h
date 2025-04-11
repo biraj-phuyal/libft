@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:34:09 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 15:56:37 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 19:06:43 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ void ft_bzero(void *s, size_t n);
 void *ft_calloc(size_t nitems, size_t size);
 int ft_isalnum(int ch);
 int ft_isalpha(int c);
-int ft_isacii(int c);
+int ft_isascii(int c);
 int ft_isdigit(int c);
 int ft_isprint(char c);
 char	*ft_itoa(int n);
 void    *ft_memchr(const void *str, int c, size_t n);
 int ft_memcmp(const void *str1, const void *str2, size_t n);
-void *memcpy(void *dest_str, const void *src_str, size_t n);
+void *ft_memcpy(void *dest_str, const void *src_str, size_t n);
 void *ft_memmove(void *dest_str, const void *src_str, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 void ft_putchar_fd(char c, int fd);
@@ -54,7 +54,7 @@ char *ft_strrchr(const char *str, int c);
 char *ft_strtrim(const char *s1, const char *set);
 char *ft_substr(char const *str, unsigned int start, size_t len);
 int ft_tolower(int ch);
-int ft_touuper(int ch);
+int ft_toupper(int ch);
 
 typedef struct s_list
 {

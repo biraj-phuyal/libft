@@ -6,21 +6,18 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:34:03 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 15:02:04 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 19:23:08 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int ft_touuper(int ch)
+int ft_toupper(int ch)
 {
-    char c = (char)ch;
-    if (c >= 'a' && c <= 'z')
-        c = c - 32;
-    else
-        return (c);
-    return (c);
+    if (ch >= 'a' && ch <= 'z')
+        return (ch - 32);
+    return (ch);
 }
 /* 
 int main ()

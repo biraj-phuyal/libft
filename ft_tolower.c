@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:58 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 10:33:59 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 19:23:11 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int ft_tolower(int ch)
 {
-    char c = (char)ch;
-    if (c >= 'A' && c <= 'Z')
-        c = c + 32;
-    else
-        return (c);
-    return (c);
+    if (ch >= 'A' && ch <= 'Z')
+        return (ch + 32);
+    return (ch);
 }
