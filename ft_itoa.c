@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:36:17 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/10 20:16:39 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/11 11:37:16 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,53 +16,49 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-int get_size_of_int(int n)
+int	get_len(long n)
 {
-	long	nb;
-	int size;
+	int	len;
 
-	nb = n;
-	if (n < 0)
-		nb *= -1;
-	size = 0;
-	while(nb > 0)
+	len = (n <= 0);
+	while (n)
 	{
-		size += 1;
-		nb /= 10;
+		n /= 10;
+		len++;
 	}
-	return (size);
+	return (len);
 }
 
-char *ft_itoa(int n)
+void	fill_str(char *str, long nb, int len)
 {
-	char *string;
-	long	nb;
-	int size;
-
-	size = get_size_of_int(n);
-	if (n < 0)
-		++size;
-	string = malloc(sizeof(char) * (size + 1));
-	if (!string)
-		return (NULL);
-	string[size] = '\0';
-	nb = n;
+	if (nb == 0)
+		str[0] = '0';
 	if (nb < 0)
 	{
-		string[0] = '-';
+		str[0] = '-';
 		nb *= -1;
-	}
-	if (nb == 0)
-	{
-		string[0] = '0';
-		string[1] = '\0';
 	}
 	while (nb != 0)
 	{
-		string[--size] = '0' + (nb % 10);
+		str[--len] = '0' + (nb % 10);
 		nb /= 10;
 	}
-	return (string);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*str;
+	long	nb;
+	int		len;
+
+	nb = n;
+	len = get_len(nb);
+	str = malloc(len + 1);
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	fill_str(str, nb, len);
+	return (str);
 }
 
 int main()
