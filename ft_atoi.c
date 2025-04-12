@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:30 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 14:31:51 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/12 11:37:32 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int ft_atoi(const char *str)
         result = (result * 10) + (*str - '0');
         str++;
     }
-    return (int)(result);
+    return (int)(result * sign);
 }
 /* 
 int main()
