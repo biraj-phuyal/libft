@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:10 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 09:18:26 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 11:56:36 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,10 @@ char *ft_strjoin(char const *s1, char const *s2)
     if (!string)
         return NULL;
     while (s1[i])
-        string[i++] = s1[i++];
+    {
+        string[i] = s1[i];
+        i++;
+    }
     while (s2[j])
         string[i++] = s2[j++];
     string[i] = '\0';

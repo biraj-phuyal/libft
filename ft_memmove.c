@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 08:16:47 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 11:54:18 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,10 @@ void *ft_memmove(void *dest_str, const void *src_str, size_t n)
     else 
     {
         while (n > i)
-            d[i++] = s[i++];
+        {
+            d[i] = s[i];
+            i++;
+        }
     }
     return (dest_str);
 }
