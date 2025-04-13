@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:34:44 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 11:39:53 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 11:58:44 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (counter);
 }
-
+/* 
 int main(void)
 {
     t_list *head = NULL;
@@ -47,4 +47,5 @@ int main(void)
     printf("Size after 2 nodes: %d\n", ft_lstsize(head)); 
 
     return 0;
-}
+} 
+*/
