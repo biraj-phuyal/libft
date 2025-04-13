@@ -6,16 +6,16 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:45 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 08:38:45 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:43:08 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
-char *ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	len;
 	char	*result;
@@ -35,9 +35,11 @@ char *ft_strtrim(const char *s1, const char *set)
 /* 
 int	main(void)
 {
-	char const s1[] = "LOLOLOLOLOL";
-	char const *set = NULL;
+	char const	s1[];
+	char const	*set;
 
+	s1[] = "LOLOLOLOLOL";
+	set = NULL;
 	printf("%s", ft_strtrim(s1, set));
 	return (0);
 }

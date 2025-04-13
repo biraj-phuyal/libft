@@ -6,14 +6,14 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 17:00:57 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 11:47:49 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:41:33 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* 
-void del(void *content) {
+void	del(void *content) {
     free(content);
 }
 */
@@ -37,13 +37,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 }
 
 /*
-int main(void) {
+int	main(void) {
     t_list *lst = ft_lstnew(strdup("Node1"));
     lst->next = ft_lstnew(strdup("Node2"));
     lst->next->next = ft_lstnew(strdup("Node3"));
 
     ft_lstclear(&lst, del);
     printf("List after clear: %s\n", lst ? "NOT NULL" : "NULL");
-    return 0;
+    return (0);
 }
 */

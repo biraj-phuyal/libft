@@ -6,47 +6,48 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:52 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 09:08:09 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:34:03 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-char *ft_substr(char const *str, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    size_t j;
-    size_t str_len;
-    char *string;
+	size_t	j;
+	size_t	str_len;
+	char	*string;
 
-    if (!str)
-        return NULL;
-    str_len = ft_strlen(str);
-    if (start >= str_len)
-        return ft_strdup("");
-    if (len > str_len - start)
-        len = str_len - start;
-    string = (char *)malloc(len + 1);
-    if (!string)
-        return NULL;
-    j = 0;
-    while (j < len && str[start + j])
-    {
-        string[j] = str[start + j];
-        j++;
-    }
-    string[j] = '\0';
-    return (string);
+	if (!s)
+		return (NULL);
+	str_len = ft_strlen(s);
+	if (start >= str_len)
+		return (ft_strdup(""));
+	if (len > str_len - start)
+		len = str_len - start;
+	string = (char *)malloc(len + 1);
+	if (!string)
+		return (NULL);
+	j = 0;
+	while (j < len && s[start + j])
+	{
+		string[j] = s[start + j];
+		j++;
+	}
+	string[j] = '\0';
+	return (string);
 }
 
 /* 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-    const char *s = "HHHH";
-    printf(ft_substr(*s, 2, 3));
+	const char	*s;
 
+    s = "HHHH";
+    printf(ft_substr(*s, 2, 3));
 }
 */

@@ -6,39 +6,38 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:43 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 09:16:25 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:22:27 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-unsigned int ft_strlcat(char *dest, const char *src, unsigned int n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-    unsigned int s_len;
-    unsigned int d_len;
-    unsigned int i;
+	size_t	s_len;
+	size_t	d_len;
+	size_t	i;
 
-    s_len = ft_strlen(src);
-    i = 0;
-    d_len = 0;
-    if (dest)
-    {
-        while (d_len < n && dest[d_len])
-            d_len++;
-    }
-    if (d_len >= n)
-        return (n + s_len);
-    while (d_len + i + 1 < n && src[i])
-    {
-        dest[d_len + i] = src[i];
-        i++;
-    }
-    dest[d_len + i] = '\0';
-    return (s_len + d_len);
+	s_len = ft_strlen(src);
+	i = 0;
+	d_len = 0;
+	if (dst)
+	{
+		while (d_len < size && dst[d_len])
+			d_len++;
+	}
+	if (d_len >= size)
+		return (size + s_len);
+	while (d_len + i + 1 < size && src[i])
+	{
+		dst[d_len + i] = src[i];
+		i++;
+	}
+	dst[d_len + i] = '\0';
+	return (s_len + d_len);
 }
 /* 
-int main() {
+int	main(void) {
     char dest[20] = "Hello, ";
     const char *src = "World!";
     unsigned int size = sizeof(dest);

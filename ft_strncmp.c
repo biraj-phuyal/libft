@@ -6,32 +6,32 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:04 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 08:35:39 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:25:26 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
-int ft_strncmp(const char *dest, const char *src, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (src[i] && dest[i] && i < n)
-    {
-        if (dest[i] != src[i])
-            return ((unsigned char)dest[i] - (unsigned char)src[i]);
-        i++;
-    }
-    if (i < n)
-        return ((unsigned char)dest[i] - (unsigned char)src[i]);
-    return (0);
+	i = 0;
+	while (s2[i] && s1[i] && i < n)
+	{
+		if (s1[i] != s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
+	}
+	if (i < n)
+		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	return (0);
 }
 /* 
-int main()
+int	main(void)
 {
     char *str = "LOLOLOL";
     const char *dest = "LOK";

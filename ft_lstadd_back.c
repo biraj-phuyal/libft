@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 15:35:38 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 11:50:16 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:41:27 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	new->next = NULL;
 }
 /* 
-int main(void) {
+int	main(void) {
     t_list *lst = NULL;
     
     ft_lstadd_back(&lst, ft_lstnew("Hello"));
@@ -41,8 +41,9 @@ int main(void) {
     ft_lstadd_back(&lst, ft_lstnew("!"));
     printf("3rd node: %s\n", (char*)lst->next->next->content);
     
-    printf("Next of last node: %s\n", lst->next->next->next ? "NOT NULL" : "NULL");
+    printf("Next of last node: %s\n",
+		lst->next->next->next ? "NOT NULL" : "NULL");
     
-    return 0;
+    return (0);
 }
  */

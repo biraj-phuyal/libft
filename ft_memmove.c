@@ -6,43 +6,42 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 11:54:18 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 14:19:48 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
 
-void *ft_memmove(void *dest_str, const void *src_str, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    const char * s;
-    char * d;
-    size_t i;
+	const char	*s;
+	char		*d;
+	size_t		i;
 
-    if (!dest_str && !src_str)
-        return (NULL);
-    s = (const char *) src_str;
-    d = (char *) dest_str;
-    i = 0;
-    if (d > s)
-    {
-        while (n-- > 0)
-            d[n] = s[n];
-    }
-    else 
-    {
-        while (n > i)
-        {
-            d[i] = s[i];
-            i++;
-        }
-    }
-    return (dest_str);
+	if (!dest && !src)
+		return (NULL);
+	s = (const char *)src;
+	d = (char *)dest;
+	i = 0;
+	if (d > s)
+	{
+		while (n-- > 0)
+			d[n] = s[n];
+	}
+	else
+	{
+		while (n > i)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (dest);
 }
 /*
-int main() {
+int	main(void) {
     char buffer[20] = "Hello, World!";
 
     printf("Original string: '%s'\n", buffer);
@@ -51,5 +50,5 @@ int main() {
 
     printf("Modified string: '%s'\n", buffer);
 
-    return 0;
+    return (0);
 }*/

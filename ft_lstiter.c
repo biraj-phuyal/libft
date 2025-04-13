@@ -6,27 +6,31 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 17:44:53 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 11:44:41 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:41:54 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void print_content(void *content)
+/* 
+void	print_content(void *content)
 {
-    printf("%s\n", (char *)content);
-}
+	char	*str;
 
-void uppercase_first(void *content)
+	printf("%s\n", (char *)content);
+} 
+*/
+/* 
+void	uppercase_first(void *content)
 {
-    char *str = (char *)content;
-    if (str && *str)
-        str[0] = ft_toupper(str[0]);
+	str = (char *)content;
+	if (str && *str)
+		str[0] = ft_toupper(str[0]);
 }
-
+ */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *current;
+	t_list	*current;
 
 	if (!f)
 		return ;
@@ -38,25 +42,21 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 }
 /* 
-int main(void)
+int	main(void)
 {
-    t_list *list = NULL;
+	t_list	*list;
 
+    list = NULL;
     ft_lstiter(list, print_content);
-
     ft_lstadd_back(&list, ft_lstnew(ft_strdup("hello")));
     ft_lstadd_back(&list, ft_lstnew(ft_strdup("world")));
     ft_lstadd_back(&list, ft_lstnew(ft_strdup("test")));
-
     printf("Original list:\n");
     ft_lstiter(list, print_content);
-
     ft_lstiter(list, uppercase_first);
     printf("\nModified list:\n");
     ft_lstiter(list, print_content);
-
     ft_lstclear(&list, free);
-
-    return 0;
+    return (0);
 }
 */

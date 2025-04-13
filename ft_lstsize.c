@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:34:44 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 11:58:44 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:42:16 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	t_list *current;
-	int counter;
+	t_list	*current;
+	int		counter;
 
 	current = lst;
 	counter = 0;
@@ -27,7 +27,7 @@ int	ft_lstsize(t_list *lst)
 	return (counter);
 }
 /* 
-int main(void)
+int	main(void)
 {
     t_list *head = NULL;
     printf("Size of empty list: %d\n", ft_lstsize(head)); 
@@ -46,6 +46,6 @@ int main(void)
     
     printf("Size after 2 nodes: %d\n", ft_lstsize(head)); 
 
-    return 0;
+    return (0);
 } 
 */

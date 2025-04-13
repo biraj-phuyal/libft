@@ -6,19 +6,18 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:56 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 16:11:15 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:41:14 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
 /* 
-int main()
+int	main(void)
 {
     char c = 9;
     printf("%d", ft_isalpha(c));

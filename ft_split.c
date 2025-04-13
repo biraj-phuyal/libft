@@ -6,15 +6,15 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 09:39:19 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 08:28:12 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:42:42 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int	count_words(char const *s, char c)
 {
@@ -97,10 +97,13 @@ char	**ft_split(char const *s, char c)
 int	main(void)
 {
 	char	**result;
-	char	*s = "Hey,kid,do,you,like,violence?";
-	char	c = ',';
-	int		i = 0;
+	char	*s;
+	char	c;
+	int		i;
 
+	s = "Hey,kid,do,you,like,violence?";
+	c = ',';
+	i = 0;
 	result = ft_split(s, c);
 	if (!result)
 	{

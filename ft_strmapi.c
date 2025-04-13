@@ -6,49 +6,50 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 11:57:21 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 08:34:27 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:43:00 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    char *str;
-    unsigned int j;
+	char			*str;
+	unsigned int	j;
 
-    if (!s || !f)
-        return NULL;
-    j = 0;
-    str = malloc(ft_strlen(s) + 1);
-    if (!str)
-        return (NULL);
-    while (s[j])
-    {
-        str[j] = f(j, s[j]);
-        j++;
-    }
-    str[j] = '\0';
-    return (str);
+	if (!s || !f)
+		return (NULL);
+	j = 0;
+	str = malloc(ft_strlen(s) + 1);
+	if (!str)
+		return (NULL);
+	while (s[j])
+	{
+		str[j] = f(j, s[j]);
+		j++;
+	}
+	str[j] = '\0';
+	return (str);
 }
 
 /* 
-char my_func(unsigned int i, char c)
+char	my_func(unsigned int i, char c)
 {
     if (i % 2 == 0)
-        return c - 32;
-    return c;
+        return (c - 32);
+    return (c);
 }
 
-int main()
+int	main(void)
 {
-    const char *input = "hello world";
+	const char	*input;
     char *result;
 
+    input = "hello world";
     result = ft_strmapi(input, my_func);
     
     if (result)
@@ -59,6 +60,6 @@ int main()
     }
     else
         printf("Memory allocation failed!\n");
-    return 0;
+    return (0);
 }
 */

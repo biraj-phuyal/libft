@@ -6,15 +6,15 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:36:17 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 08:09:14 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 13:41:25 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int	get_len(long n)
 {
@@ -61,7 +61,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 /* 
-int main()
+int	main(void)
 {
 	//printf("%d", have_size_of_int(100000));
 	printf("INT MAX -> %s\n", ft_itoa(2147483647));
