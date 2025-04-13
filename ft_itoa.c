@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:36:17 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 15:02:08 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 08:09:14 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-int	have_len(long n)
+int	get_len(long n)
 {
 	int	len;
 
@@ -52,7 +52,7 @@ char	*ft_itoa(int n)
 	int		len;
 
 	nb = n;
-	len = have_len(nb);
+	len = get_len(nb);
 	str = malloc(len + 1);
 	if (!str)
 		return (NULL);

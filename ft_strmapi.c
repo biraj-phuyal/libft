@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 11:57:21 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 15:02:08 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 08:34:27 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-int length(char const *str)
-{
-    int i;
-
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);
-}
-
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
     char *str;
@@ -34,7 +24,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     if (!s || !f)
         return NULL;
     j = 0;
-    str = malloc(length(s) + 1);
+    str = malloc(ft_strlen(s) + 1);
     if (!str)
         return (NULL);
     while (s[j])

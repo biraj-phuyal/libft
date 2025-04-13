@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 13:27:16 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 14:48:36 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 11:33:00 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,10 @@ void ft_putnbr_fd(int n, int fd)
 	digits = '0' + (n % 10);
 	write (fd, &digits, 1);
 }
+/* 
+int main(void)
+{
+    ft_putnbr_fd(42, 1);
+    return 0;
+}
+ */

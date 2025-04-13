@@ -6,25 +6,14 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:30 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 14:45:17 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 08:28:38 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-int	get_len(const char *src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strdup(const char *src)
 {
@@ -32,7 +21,7 @@ char	*ft_strdup(const char *src)
 	int		i;
 
 	i = 0;
-	new = malloc((get_len(src) + 1) * sizeof(char));
+	new = malloc((ft_strlen(src) + 1) * sizeof(char));
 	if (new == NULL)
 		return (NULL);
 	while (src[i] != '\0')

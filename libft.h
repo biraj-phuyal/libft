@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:34:09 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/12 18:56:57 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 11:34:15 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+#include <limits.h>
 
 typedef struct s_list
 {

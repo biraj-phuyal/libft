@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:24 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/12 09:39:13 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 09:15:08 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,12 @@ char *ft_strnstr(const char *str, const char *search, size_t n)
     }
     return (NULL);
 }
+/* 
+int main()
+{
+    const char *str = "LOLOLOL";
+    const char *dest = "LOK";
+    int s = ft_strnstr(dest, str, 3);
+    //printf("%s", str);
+}
+*/

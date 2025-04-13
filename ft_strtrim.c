@@ -6,16 +6,13 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:45 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/12 12:29:55 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 08:38:45 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <limits.h>
 #include <stdlib.h>
 
 char *ft_strtrim(const char *s1, const char *set)

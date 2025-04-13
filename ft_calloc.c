@@ -6,18 +6,15 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:45 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/05 11:22:44 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 08:06:07 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <limits.h>
-
 
 void *ft_calloc(size_t nitems, size_t size)
 {
@@ -39,7 +36,7 @@ void *ft_calloc(size_t nitems, size_t size)
         byte_ptr[i] = 0;
         i++;
     }
-    return ptr;
+    return (ptr);
 }
 
 /* 

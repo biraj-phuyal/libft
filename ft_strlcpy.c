@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:50 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/11 16:02:33 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 09:16:35 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,12 @@ unsigned int ft_strlcpy(char *dest, const char *src, unsigned int n)
 }
 /* 
 int main() {
-    // Test variables
-    char dest[20] = "Hello, ";  // Destination string with enough space
-    const char *src = "World!";  // Source string to append
-    unsigned int size = sizeof(dest); // Size of the destination buffer
+    char dest[20] = "Hello, ";
+    const char *src = "World!";
+    unsigned int size = sizeof(dest);
 
-    // Call ft_strlcat
-    unsigned int result = ft_strlcat(dest, src, size);
+    unsigned int result = ft_strlcpy(dest, src, size);
 
-    // Print results
     printf("Resulting string: %s\n", dest);
     printf("Length of the resulting string: %u\n", result);
     
