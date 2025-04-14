@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:52:37 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:41:36 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/14 17:12:48 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	{
 		lst->next = NULL;
 		del(lst->content);
+        free(lst);
 	}
 }
 /* 

@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:36:17 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:41:25 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/13 20:22:30 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*ft_itoa(int n)
 /* 
 int	main(void)
 {
-	//printf("%d", have_size_of_int(100000));
+	//printf("%d", get_len(100000));
 	printf("INT MAX -> %s\n", ft_itoa(2147483647));
 	printf("ZARO -> %s\n", ft_itoa(0));
 	printf("INT MIN -> %s\n", ft_itoa(-2147483648));

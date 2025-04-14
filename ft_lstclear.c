@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 17:00:57 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:41:33 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/14 17:13:05 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		tmp = current->next;
 		ft_lstdelone(current, del);
-		free(current);
 		current = tmp;
 	}
 	*lst = NULL;
