@@ -44,7 +44,6 @@ clean:
 fclean:	clean
 	rm -f ${NAME} ${BONUS_OBJS}
 
-
 re:	fclean all
 
 .PHONY:	all clean fclean re

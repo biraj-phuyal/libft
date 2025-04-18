@@ -30,7 +30,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		current = ft_lstnew(content);
 		if (!current)
 		{
-			del(current->content);
+			del(content);
 			ft_lstdelone(new, del);
 			return (NULL);
 		}
