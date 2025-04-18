@@ -31,3 +31,18 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/* 
+int main(void)
+{
+	char source[] = "Hello, memcpy!";
+	char destination[50];  // make sure it's big enough
+
+	// Copy the first 13 bytes (including the null terminator)
+	ft_memcpy(destination, source, strlen(source) + 1);
+
+	printf("Source:      %s\n", source);
+	printf("Destination: %s\n", destination);
+
+	return 0;
+}
+ */
