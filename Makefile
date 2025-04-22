@@ -13,6 +13,7 @@
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 NAME = libft.a
+HEADER = libft.h
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
@@ -29,20 +30,20 @@ OBJS = ${SRCS:.c=.o}
 BONUS_OBJS = ${BONUS:.c=.o}
 all: ${NAME}
 
-${NAME}: ${OBJS} ${BONUS_OBJS}
+${NAME}: ${OBJS}
 	${AR} ${NAME} ${OBJS} 
 
-.c.o:
+%.o: %.c ${HEADER}
 	${CC} ${CFLAGS} -c $< -o $@
-
-bonus :	$(BONUS_OBJS)
-	${AR}	$(NAME)	$(BONUS_OBJS)
 
 clean:
 	rm -f ${OBJS} ${BONUS_OBJS}
 
 fclean:	clean
 	rm -f ${NAME} ${BONUS_OBJS}
+
+bonus :	${OBJS} $(BONUS_OBJS)
+	${AR}	$(NAME)	$(BONUS_OBJS)
 
 re:	fclean all
 
