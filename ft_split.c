@@ -16,7 +16,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	count;
 	int	in_word;

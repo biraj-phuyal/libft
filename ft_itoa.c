@@ -16,7 +16,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int	get_len(long n)
+static int	get_len(long n)
 {
 	int	len;
 
@@ -29,7 +29,7 @@ int	get_len(long n)
 	return (len);
 }
 
-void	fill_str(char *str, long nb, int len)
+static void	fill_str(char *str, long nb, int len)
 {
 	if (nb == 0)
 		str[0] = '0';
@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 	fill_str(str, nb, len);
 	return (str);
 }
-/* 
+
 int	main(void)
 {
 	//printf("%d", get_len(100000));
@@ -68,4 +68,3 @@ int	main(void)
 	printf("ZARO -> %s\n", ft_itoa(0));
 	printf("INT MIN -> %s\n", ft_itoa(-2147483648));
 }
- */

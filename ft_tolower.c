@@ -23,7 +23,7 @@ int main ()
 {
 	int	c;
 
-    c = '8';
+    c = 'a';
     printf("%c", ft_tolower(c));
 }
  */

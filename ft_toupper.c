@@ -24,7 +24,7 @@ int main ()
 {
 	int	c;
 
-    c = '9';
-    printf("%c", ft_touuper(c));
+  c = 'a';
+  printf("%c", ft_toupper(c));
 }
  */
