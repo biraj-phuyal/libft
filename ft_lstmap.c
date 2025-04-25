@@ -43,7 +43,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!current)
 		{
 			del(content);
-			ft_lstdelone(new, del);
+			ft_lstclear(new, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&new, current);

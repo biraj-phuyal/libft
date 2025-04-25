@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 	fill_str(str, nb, len);
 	return (str);
 }
-
+/* 
 int	main(void)
 {
 	//printf("%d", get_len(100000));
@@ -68,3 +68,4 @@ int	main(void)
 	printf("ZARO -> %s\n", ft_itoa(0));
 	printf("INT MIN -> %s\n", ft_itoa(-2147483648));
 }
+ */
