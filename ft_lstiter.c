@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 17:44:53 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:41:54 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 16:26:01 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	print_content(void *content)
 {
 	char	*str;
-
+	// WELL JUST A COMMENT
 	printf("%s\n", (char *)content);
 } 
 */
