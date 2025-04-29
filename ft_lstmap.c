@@ -26,7 +26,7 @@ void	my_del_func(void *content)
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*current;
+	t_list	*node;
 	t_list	*new;
 	void	*content;
 
@@ -39,14 +39,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			ft_lstclear(&new, del);
 			return (NULL);
 		}
-		current = ft_lstnew(content);
-		if (!current)
+		node = ft_lstnew(content);
+		if (!node)
 		{
 			del(content);
-			ft_lstclear(new, del);
+			ft_lstclear(&new, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&new, current);
+		ft_lstadd_back(&new, node);
 		lst = lst->next;
 	}
 	return (new);
