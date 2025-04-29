@@ -6,12 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:57 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 17:12:22 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:26 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_strlen(const char *s)
 {

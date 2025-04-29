@@ -6,15 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:33:52 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 14:34:03 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:54 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

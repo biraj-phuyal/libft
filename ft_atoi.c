@@ -6,14 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:30 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 14:30:36 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:47 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int	ft_atoi(const char *nptr)
 {

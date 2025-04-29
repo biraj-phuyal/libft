@@ -6,12 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:37:14 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:41:19 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:26 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {

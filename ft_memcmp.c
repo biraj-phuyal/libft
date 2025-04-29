@@ -6,14 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:31:33 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 14:28:08 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:47 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

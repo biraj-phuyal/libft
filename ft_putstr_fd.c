@@ -6,13 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 13:23:59 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 20:27:25 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:43 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {

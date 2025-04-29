@@ -6,15 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:36:45 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 14:37:36 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 16:11:16 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -23,9 +19,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	unsigned char	*byte_ptr;
 	size_t			i;
 
-	if (nmemb != 0 && size > SIZE_MAX / nmemb)
-		return (NULL);
 	total_size = nmemb * size;
+	if (nmemb != 0 && size != total_size / nmemb)
+		return (NULL);
 	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);

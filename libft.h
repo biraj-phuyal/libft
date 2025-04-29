@@ -6,20 +6,15 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 13:53:38 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/29 13:36:48 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:59:05 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "libft.h"
-# include <fcntl.h>
 # include <limits.h>
-# include <stdint.h>
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 typedef struct s_list

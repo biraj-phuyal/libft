@@ -6,12 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:18 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:42:31 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:26 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {

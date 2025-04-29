@@ -6,13 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 10:32:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 14:19:48 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:35 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -6,15 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 09:39:19 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:42:42 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:54 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 static int	count_words(char const *s, char c)
 {

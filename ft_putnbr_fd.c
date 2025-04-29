@@ -6,17 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 13:27:16 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:42:38 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:57:58 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
