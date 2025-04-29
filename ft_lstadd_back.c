@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 15:35:38 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/29 14:17:25 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 14:28:59 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;
 
-	if (!lst || !new)
-		return ;
 	if (!*lst)
 	{
 		*lst = new;
