@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 15:35:38 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/04/13 13:41:27 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/04/29 14:15:03 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,12 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (!*lst)
 	{
 		*lst = new;
-		new->next = NULL;
 		return ;
 	}
 	current = *lst;
 	while (current->next != NULL)
 		current = current->next;
 	current->next = new;
-	new->next = NULL;
 }
 /* 
 int	main(void) {
