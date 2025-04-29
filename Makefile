@@ -6,7 +6,7 @@
 #    By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/03 18:38:41 by biphuyal          #+#    #+#              #
-#    Updated: 2025/04/29 13:59:25 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/04/29 14:36:16 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ clean:
 	rm -f bonus
 
 fclean:	clean
-	rm -f ${NAME} ${BONUS_OBJS}
+	rm -f ${NAME}
 
 bonus :	${OBJS} $(BONUS_OBJS)
 	${AR}	$(NAME)	${OBJS} $(BONUS_OBJS)
